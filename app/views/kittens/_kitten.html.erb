@@ -1,0 +1,9 @@
+<h2>
+    Name: <%= kitten.name %>
+</h2>
+<ul>
+    <li>Age: <%= kitten.age %></li>
+    <li>Cuteness: <%= kitten.cuteness %></li>
+    <li>Softness: <%= kitten.softness %></li>
+</ul>
+<%= link_to "Delete", kitten_path(kitten), data: {turbo_method: :delete} %>
